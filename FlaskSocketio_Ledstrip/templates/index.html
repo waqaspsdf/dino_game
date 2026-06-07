@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <title>Flask-SocketIO OpenCV</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg py-2 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+              <!-- Logo Image -->
+              <img src="{{ url_for('static', filename='img/socket_io.png') }}" width="45" alt="" class="d-inline-block align-middle mr-2">
+              <!-- Logo Text -->
+              <span class="font-weight-bold">Flask-SocketIO, OpenCV, Mediapipe Control WS2812 Addressable LED Strip</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="py-10">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <img src="{{ url_for('video_feed') }}" width="100%" class="img-thumbnail">
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+    </script>
+
+</body>
+</html>
